@@ -1,0 +1,30 @@
+{
+  "title": "Đánh giá hiệu suất làm việc 20 ngày",
+  "text_input": [
+    {
+      "id": "txt_1",
+      "question": "1. Nêu các thông tin cơ bản để tư vấn 3 loại Bia thủ công (Bay, Leo, Amber):",
+      "expected_answer": "Bay: hoa bia và nếp cái hoa vàng. Leo: chanh dây hợp khách nữ. Amber: mật ong rừng Tây Bắc"
+    },
+    {
+      "id": "txt_2",
+      "question": "2. Nêu thông tin tư vấn loại Rượu mơ:",
+      "expected_answer": "Độ cồn 25 độ, vị chua nhẹ thơm dịu thoang thoảng ngâm đường phèn, Mơ Tình Sơn La"
+    },
+    {
+      "id": "txt_3",
+      "question": "3. Xử lý thế nào khi khách vào bàn lúc 22h15?",
+      "expected_answer": "Tiếp đón nhiệt tình không hối khách. Báo last order bếp và pha chế 22h30, rượu bia 23h, bếp nướng trong đã đóng"
+    },
+    {
+      "id": "txt_4",
+      "question": "4. Xứ lý tình huống khách muốn gọi Set menu nhưng không muốn ăn 1 món nào đó trong set?",
+      "expected_answer": "Giải thích đây là set tổng hợp không phải combo, giá bằng món lẻ nên xin phép bấm món lẻ. Nếu khách khó chịu thì báo CSKH"
+    },
+    {
+      "id": "txt_5",
+      "question": "5. Xử lý tình huống khách phản hồi món lên lâu:",
+      "expected_answer": "Check CukCuk, nếu quá giờ quy định thì viết phiếu hối món đưa CSKH. Nếu chưa quá giờ mà khách khó chịu thì báo CSKH"
+    }
+  ]
+}

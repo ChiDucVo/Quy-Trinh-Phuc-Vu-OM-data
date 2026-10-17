@@ -33,23 +33,35 @@
     },
     {
       "id": "txt_7",
-      "question": "Nêu ngắn gọn Quy trình hối món:",
-      "expected_answer": "Kiểm tra thời gian trên Cuk Cuk, ghi phiếu hối món đưa cho CSKH để vào bếp hối, nói khéo thời gian ra món với khách"
+      "question": "Nêu Quy trình hối món:",
+      "expected_answer": [
+        "Kiểm tra thời gian trên Cuk Cuk, ghi phiếu hối món đưa cho CSKH để vào bếp hối, nói khéo thời gian ra món với khách",
+        "Đảm bảo đã tư vấn kĩ thời gian. Kiểm tra Cuk Cuk nếu quá 5-10p, nướng 10-15p, sẵn 15-50p, gà 90p. Ghi phiếu hối đưa CSKH, nói khéo thời gian với khách, khó chịu báo GS"
+      ]
     },
     {
       "id": "txt_8",
-      "question": "Nêu ngắn gọn Quy trình đẩy món (nếu order nhầm):",
-      "expected_answer": "Báo CSKH mang món vào cho tiếp thực đưa bếp kiểm tra. Nếu không đảm bảo chất lượng phục vụ đền 50%, nếu đảm bảo thì bếp đẩy trong 5 phút"
+      "question": "Nêu Quy trình đẩy món (nếu order nhầm):",
+      "expected_answer": [
+        "Báo CSKH mang món vào cho tiếp thực đưa bếp kiểm tra. Nếu không đảm bảo chất lượng phục vụ đền 50%, nếu đảm bảo thì bếp đẩy trong 5 phút",
+        "Báo CSKH mang món vào tiếp thực đưa bếp kiểm tra. Không đảm bảo thì chuyển món qua NV đền 50%. Còn đủ chất lượng bếp báo tiếp thực, đẩy trong 5p, kí bill giấy đưa thu ngân"
+      ]
     },
     {
       "id": "txt_9",
-      "question": "Nêu ngắn gọn Quy trình hủy món:",
-      "expected_answer": "Báo ngay CSKH hỏi bếp đã làm chưa. Nếu chưa làm bếp kí bill huỷ đưa thu ngân. Nếu lỗi nhân viên mà không đẩy được thì đền 50%"
+      "question": "Nêu Quy trình hủy món:",
+      "expected_answer": [
+        "Báo ngay CSKH hỏi bếp đã làm chưa. Nếu chưa làm bếp kí bill huỷ đưa thu ngân. Nếu lỗi nhân viên mà không đẩy được thì đền 50%",
+        "Báo ngay CSKH hỏi bếp. Nếu chưa làm bếp kí bill huỷ đưa thu ngân. Nếu lỗi NV không đẩy được đền 50%. Nếu món đã làm không phải lỗi NV thì không chịu trách nhiệm"
+      ]
     },
     {
       "id": "txt_10",
       "question": "Trong Quy trình thanh toán, trước khi ra bill cần xác nhận lại với khách những gì?",
-      "expected_answer": "Đã lên đủ món, voucher, thẻ thành viên, số lượng khăn, số lượng trả nước rượu bia, số khách, xuất VAT hay không"
+      "expected_answer": [
+        "Đã lên đủ món, voucher, thẻ thành viên, số lượng khăn, số lượng trả nước rượu bia, số khách, xuất VAT hay không",
+        "Xác nhận đã lên đủ món, voucher, thẻ thành viên xin SDT hoặc tư vấn đăng ký giảm 5%, số lượng khăn, trả nước rượu bia, số khách, xuất VAT"
+      ]
     }
   ]
 }

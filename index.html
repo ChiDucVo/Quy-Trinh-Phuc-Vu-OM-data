@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hệ Thống Học & Kiểm Tra Quy Trình OM</title>
     <link rel="manifest" href="manifest.json">
-    <!-- Cấu hình riêng cho iPhone (iOS) -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="OM Đào Tạo">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2965/2965306.png">
-    <!-- Đổi màu thanh trạng thái cho Android -->
     <meta name="theme-color" content="#1a5e3a">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Đào Tạo Quy Trình OM Nướng</h1>
+            <h1>Đào Tạo Quy Trình OM</h1>
             <p>Chọn bài kiểm tra để bắt đầu</p>
         </header>
         
@@ -39,7 +37,6 @@
             <p id="score-display"></p>
             <div id="feedback-container"></div>
             
-            <!-- Hai nút hành động -->
             <div class="action-buttons">
                 <button class="back-btn" onclick="retryTest()">🔄 Làm lại bài này</button>
                 <button class="back-btn" onclick="goBack()">🔙 Làm bài khác</button>

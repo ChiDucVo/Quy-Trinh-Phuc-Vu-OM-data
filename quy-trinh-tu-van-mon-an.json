@@ -1,0 +1,39 @@
+{
+  "title": "Quy trình tư vấn món ăn",
+  "multiple_choice": [
+    {
+      "id": "mc_1",
+      "question": "Khi khách order món 'ốc hương', nhân viên phục vụ nên tư vấn ăn kèm với món gì?",
+      "options": [
+        "Cơm lam",
+        "Bánh mì",
+        "Bún thêm",
+        "Salad"
+      ],
+      "correct_answer": 1
+    },
+    {
+      "id": "mc_2",
+      "question": "Thời gian tư vấn ra món đối với Gà nướng mắc khén / nướng muối ớt là bao lâu?",
+      "options": [
+        "40-50 phút",
+        "10-15 phút",
+        "1 tiếng 30 phút",
+        "2 tiếng"
+      ],
+      "correct_answer": 2
+    }
+  ],
+  "text_input": [
+    {
+      "id": "txt_1",
+      "question": "Món Lõi Vai Bò Aukobe nên tư vấn ăn kèm với sốt gì?",
+      "expected_answer": "sốt trứng muối"
+    },
+    {
+      "id": "txt_2",
+      "question": "Đối với tất cả các loại thịt bò, tư vấn khách nướng với độ chín bao nhiêu phần trăm để thịt mềm và ngon hơn?",
+      "expected_answer": "60-80%"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+:root {
+    --om-green: #1a5e3a; /* Tone xanh lá OM */
+    --om-light: #e8f0eb;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--om-green);
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--om-green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #124529;
+}
+
+.back-btn { background-color: #6c757d; }
+.submit-btn { width: 100%; margin-top: 20px; padding: 15px; font-weight: bold; }
+.hidden { display: none; }
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.question-title { font-weight: bold; margin-bottom: 10px; }
+.option-label { display: block; margin-bottom: 8px; cursor: pointer; }
+.text-input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+
+.correct { color: green; font-weight: bold; }
+.incorrect { color: red; font-weight: bold; }
+.feedback { background: #f8f9fa; padding: 10px; margin-top: 10px; border-left: 4px solid var(--om-green); font-size: 14px;}

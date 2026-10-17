@@ -1,0 +1,39 @@
+{
+  "title": "Đánh giá hiệu suất làm việc 10 ngày",
+  "multiple_choice": [
+    {
+      "id": "mc_1",
+      "question": "Tiêu chí hàng đầu của doanh nghiệp là gì?",
+      "options": [
+        "Lợi nhuận của quán",
+        "Trải nghiệm của khách hàng, khách hàng là người trả lương",
+        "Số lượng món ăn bán ra",
+        "Sự thoải mái của nhân viên"
+      ],
+      "correct_answer": 1
+    },
+    {
+      "id": "mc_2",
+      "question": "Theo nguyên tắc 5C, chữ C đầu tiên và cuối cùng là gì?",
+      "options": [
+        "Cười - Chúc",
+        "Chào - Cảm ơn",
+        "Chăm sóc - Cười",
+        "Cảm ơn - Chúc"
+      ],
+      "correct_answer": 1
+    }
+  ],
+  "text_input": [
+    {
+      "id": "txt_1",
+      "question": "Nêu 3 Luôn trong quy trình tiếp xúc khách hàng:",
+      "expected_answer": "Luôn tươi cười, luôn dạ vâng, luôn cảm ơn và xin lỗi"
+    },
+    {
+      "id": "txt_2",
+      "question": "Trong quy trình thanh toán, trước khi thanh toán phải xác nhận lại với khách những thông tin gì?",
+      "expected_answer": "Đã lên đủ món, Có voucher hay không, Có thẻ thành viên hay không, Số lượng khăn, Số lượng trả nước, Số khách, Xuất VAT hay không"
+    }
+  ]
+}

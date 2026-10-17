@@ -1,0 +1,15 @@
+{
+  "name": "Đào Tạo Quy Trình OM",
+  "short_name": "OM Đào Tạo",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7f6",
+  "theme_color": "#1a5e3a",
+  "icons": [
+    {
+      "src": "1792220674915_266018791759540516_2417914690564582427_0e2caa56cd1db7b6d711d73075970d5c",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

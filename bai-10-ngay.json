@@ -1,39 +1,55 @@
 {
   "title": "Đánh giá hiệu suất làm việc 10 ngày",
-  "multiple_choice": [
-    {
-      "id": "mc_1",
-      "question": "Tiêu chí hàng đầu của doanh nghiệp là gì?",
-      "options": [
-        "Lợi nhuận của quán",
-        "Trải nghiệm của khách hàng, khách hàng là người trả lương",
-        "Số lượng món ăn bán ra",
-        "Sự thoải mái của nhân viên"
-      ],
-      "correct_answer": 1
-    },
-    {
-      "id": "mc_2",
-      "question": "Theo nguyên tắc 5C, chữ C đầu tiên và cuối cùng là gì?",
-      "options": [
-        "Cười - Chúc",
-        "Chào - Cảm ơn",
-        "Chăm sóc - Cười",
-        "Cảm ơn - Chúc"
-      ],
-      "correct_answer": 1
-    }
-  ],
   "text_input": [
     {
       "id": "txt_1",
-      "question": "Nêu 3 Luôn trong quy trình tiếp xúc khách hàng:",
-      "expected_answer": "Luôn tươi cười, luôn dạ vâng, luôn cảm ơn và xin lỗi"
+      "question": "Tiêu chí hàng đầu của doanh nghiệp là gì? Ai là người trả lương cho các bạn?",
+      "expected_answer": "Là trải nghiệm của khách hàng, khách hàng là người trả lương"
     },
     {
       "id": "txt_2",
-      "question": "Trong quy trình thanh toán, trước khi thanh toán phải xác nhận lại với khách những thông tin gì?",
-      "expected_answer": "Đã lên đủ món, Có voucher hay không, Có thẻ thành viên hay không, Số lượng khăn, Số lượng trả nước, Số khách, Xuất VAT hay không"
+      "question": "Văn hóa của doanh nghiệp là gì?",
+      "expected_answer": "Đối xử với khách hàng và đồng nghiệp như người thân. Môi trường làm việc tích cực, công bằng, minh bạch, cấp trên luôn luôn lắng nghe cấp dưới"
+    },
+    {
+      "id": "txt_3",
+      "question": "Nguyên tắc 5C và 3 Luôn là gì?",
+      "expected_answer": "5C: Chào, Cười, Chăm sóc, Chúc sức khoẻ, Cảm ơn. 3 Luôn: Luôn tươi cười, luôn dạ vâng, luôn cảm ơn và xin lỗi"
+    },
+    {
+      "id": "txt_4",
+      "question": "Thái độ làm việc với đồng nghiệp và cấp trên cần đảm bảo yếu tố gì?",
+      "expected_answer": "Đoàn kết, có tinh thần tập thể, không tị nạnh, không lười biếng, không nói dối, không trốn tránh trong công việc, luôn chủ động, có tinh thần học hỏi"
+    },
+    {
+      "id": "txt_5",
+      "question": "Ý nghĩa thương hiệu OM là gì?",
+      "expected_answer": "Âm thanh OM mang theo năng lượng an lành và bình an. Logo kết hợp giữa mặt trời, đồng lúa và cánh cò"
+    },
+    {
+      "id": "txt_6",
+      "question": "Bộ setup tiêu chuẩn trên bàn gồm những gì?",
+      "expected_answer": "2 đĩa, 6 chén, 6 ly, 6 đôi đũa, 6 muỗng, 2 kẹp gắp, 1 vá, 1 kéo, 6 ghế, Tab order, Menu, Ghế để lò, Vỉ nướng, Kệ xô đá, Xô đá nhỏ, Kẹp gắp đá, Thùng rác, Thùng ướp bia, Khăn lau bàn"
+    },
+    {
+      "id": "txt_7",
+      "question": "Nêu ngắn gọn Quy trình hối món:",
+      "expected_answer": "Kiểm tra thời gian trên Cuk Cuk, ghi phiếu hối món đưa cho CSKH để vào bếp hối, nói khéo thời gian ra món với khách"
+    },
+    {
+      "id": "txt_8",
+      "question": "Nêu ngắn gọn Quy trình đẩy món (nếu order nhầm):",
+      "expected_answer": "Báo CSKH mang món vào cho tiếp thực đưa bếp kiểm tra. Nếu không đảm bảo chất lượng phục vụ đền 50%, nếu đảm bảo thì bếp đẩy trong 5 phút"
+    },
+    {
+      "id": "txt_9",
+      "question": "Nêu ngắn gọn Quy trình hủy món:",
+      "expected_answer": "Báo ngay CSKH hỏi bếp đã làm chưa. Nếu chưa làm bếp kí bill huỷ đưa thu ngân. Nếu lỗi nhân viên mà không đẩy được thì đền 50%"
+    },
+    {
+      "id": "txt_10",
+      "question": "Trong Quy trình thanh toán, trước khi ra bill cần xác nhận lại với khách những gì?",
+      "expected_answer": "Đã lên đủ món, voucher, thẻ thành viên, số lượng khăn, số lượng trả nước rượu bia, số khách, xuất VAT hay không"
     }
   ]
 }

@@ -60,6 +60,59 @@ button:hover {
 .option-label { display: block; margin-bottom: 8px; cursor: pointer; }
 .text-input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
 
-.correct { color: green; font-weight: bold; }
-.incorrect { color: red; font-weight: bold; }
-.feedback { background: #f8f9fa; padding: 10px; margin-top: 10px; border-left: 4px solid var(--om-green); font-size: 14px;}
+/* --- GIAO DIỆN KẾT QUẢ MỚI --- */
+.result-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.result-item.correct {
+    border-left: 5px solid #28a745; /* Viền xanh lá cho câu đúng */
+}
+
+.result-item.incorrect {
+    border-left: 5px solid #dc3545; /* Viền đỏ cho câu sai */
+}
+
+.question-text {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.feedback-box {
+    background-color: #f8f9fa;
+    padding: 10px 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #495057; /* Chữ xám đậm dễ nhìn, không dùng chữ đỏ nữa */
+}
+
+.feedback-box.expected {
+    border-left: 3px solid #28a745;
+}
+
+.feedback-box.user {
+    border-left: 3px solid #dc3545;
+}
+
+.feedback-box strong {
+    color: #222;
+}
+
+/* Các nút hành động ở màn hình kết quả */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.action-buttons button {
+    flex: 1; /* Chia đều 2 nút 50/50 */
+    margin: 0;
+}

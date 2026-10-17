@@ -71,20 +71,33 @@ function submitTest() {
     let total = 0;
     let feedbackHTML = '';
 
+    // Chấm điểm Trắc nghiệm
     if (currentTestData.multiple_choice) {
         total += currentTestData.multiple_choice.length;
         currentTestData.multiple_choice.forEach(q => {
             const selected = document.querySelector(`input[name="${q.id}"]:checked`);
             const userAnswer = selected ? parseInt(selected.value) : -1;
+            
             if (userAnswer === q.correct_answer) {
                 score++;
-                feedbackHTML += `<p class="correct">✔️ Câu "${q.question}" - Chính xác!</p>`;
+                feedbackHTML += `
+                    <div class="result-item correct">
+                        <div class="question-text">✔️ ${q.question}</div>
+                        <div class="feedback-box"><strong>Chính xác!</strong></div>
+                    </div>`;
             } else {
-                feedbackHTML += `<p class="incorrect">❌ Câu "${q.question}" - Sai. Đáp án đúng: ${q.options[q.correct_answer]}</p>`;
+                let userText = selected ? q.options[userAnswer] : "(Bỏ trống)";
+                feedbackHTML += `
+                    <div class="result-item incorrect">
+                        <div class="question-text">❌ ${q.question}</div>
+                        <div class="feedback-box expected"><strong>Đáp án chuẩn:</strong> ${q.options[q.correct_answer]}</div>
+                        <div class="feedback-box user"><strong>Bạn chọn:</strong> ${userText}</div>
+                    </div>`;
             }
         });
     }
 
+    // Chấm điểm Tự luận
     if (currentTestData.text_input) {
         total += currentTestData.text_input.length;
         currentTestData.text_input.forEach(q => {
@@ -92,22 +105,43 @@ function submitTest() {
             const normalizedUser = normalizeText(userText);
             const normalizedExpected = normalizeText(q.expected_answer);
 
-            // Kiểm tra xem câu trả lời của user có chứa từ khóa của đáp án không
             if (normalizedUser === normalizedExpected || (normalizedUser.length > 5 && normalizedUser.includes(normalizedExpected))) {
                 score++;
-                feedbackHTML += `<p class="correct">✔️ Câu "${q.question}" - Chính xác!</p>`;
+                feedbackHTML += `
+                    <div class="result-item correct">
+                        <div class="question-text">✔️ ${q.question}</div>
+                        <div class="feedback-box"><strong>Chính xác!</strong></div>
+                    </div>`;
             } else {
-                feedbackHTML += `<div class="incorrect">❌ Câu "${q.question}" - Sai. 
-                    <div class="feedback">Đáp án chuẩn: ${q.expected_answer}</div>
-                    <div class="feedback">Bạn nhập: ${userText || "(Bỏ trống)"}</div>
-                </div>`;
+                feedbackHTML += `
+                    <div class="result-item incorrect">
+                        <div class="question-text">❌ ${q.question}</div>
+                        <div class="feedback-box expected"><strong>Đáp án chuẩn:</strong> ${q.expected_answer}</div>
+                        <div class="feedback-box user"><strong>Bạn nhập:</strong> ${userText || "(Bỏ trống)"}</div>
+                    </div>`;
             }
         });
     }
 
     document.getElementById('test-section').classList.add('hidden');
     document.getElementById('result-section').classList.remove('hidden');
-    document.getElementById('score-display').innerHTML = `Điểm của bạn: <strong>${score} /${total}</strong>`;
+    document.getElementById('score-display').innerHTML = `Điểm của bạn: <strong>${score} / ${total}</strong>`;
     document.getElementById('feedback-container').innerHTML = feedbackHTML;
+    window.scrollTo(0, 0);
+}
+
+// Hàm làm lại bài hiện tại
+function retryTest() {
+    // Xóa trắng toàn bộ ô nhập tự luận
+    const textInputs = document.querySelectorAll('.text-input');
+    textInputs.forEach(input => input.value = '');
+    
+    // Bỏ chọn toàn bộ ô trắc nghiệm (nếu có)
+    const radioInputs = document.querySelectorAll('input[type="radio"]');
+    radioInputs.forEach(input => input.checked = false);
+    
+    // Chuyển màn hình về lại bài kiểm tra
+    document.getElementById('result-section').classList.add('hidden');
+    document.getElementById('test-section').classList.remove('hidden');
     window.scrollTo(0, 0);
 }

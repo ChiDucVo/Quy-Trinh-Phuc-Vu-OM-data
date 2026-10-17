@@ -3,13 +3,13 @@
   "text_input": [
     {
       "id": "txt_1",
-      "question": "1. Nêu các thông tin cơ bản để tư vấn 3 loại Bia thủ công (Bay, Leo, Amber):",
-      "expected_answer": "Bay: hoa bia và nếp cái hoa vàng. Leo: chanh dây hợp khách nữ. Amber: mật ong rừng Tây Bắc"
+      "question": "1. Tư vấn 3 loại Bia thủ công (Thành phần, độ cồn, IBU) và Nhà cung cấp:",
+      "expected_answer": "Bay: hoa bia châu âu, nếp cái hoa vàng, 4.5%, IBU 18. Leo: chanh dây, 4.3%, IBU 24, khách nữ. Amber: mật ong rừng, 5.8%, IBU 38. Nhà cung cấp Viễn Đông"
     },
     {
       "id": "txt_2",
-      "question": "2. Nêu thông tin tư vấn loại Rượu mơ:",
-      "expected_answer": "Độ cồn 25 độ, vị chua nhẹ thơm dịu thoang thoảng ngâm đường phèn, Mơ Tình Sơn La"
+      "question": "2. Tư vấn Rượu mơ (Độ cồn, mùi vị, nguyên liệu) và Nhà cung cấp:",
+      "expected_answer": "25 độ, chua nhẹ, ngâm đường phèn, xưởng Cô Đàm Yên Bái, Mơ Tình Sơn La"
     },
     {
       "id": "txt_3",
